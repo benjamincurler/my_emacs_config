@@ -45,11 +45,11 @@
     (when (fboundp mode) (funcall mode -1)))
 
   (mapc 'require '(uniquify starter-kit-defuns starter-kit-misc))
-
+  
   ;; You can keep system- or user-specific customizations here
   (setq esk-system-config (concat user-emacs-directory system-name ".el")
-        esk-user-config (concat user-emacs-directory user-login-name ".el")
-        esk-user-dir (concat user-emacs-directory user-login-name))
+        esk-user-config (concat user-emacs-directory "personal" ".el")
+        esk-user-dir (concat user-emacs-directory "personal"))
 
   (add-to-list 'load-path esk-user-dir)
 

@@ -10,7 +10,7 @@
 
 (mapc 'require '(uniquify starter-kit-defuns starter-kit-misc))
 
-(setq esk-system-config (concat user-emacs-directory system-name ".el") esk-user-config (concat user-emacs-directory user-login-name ".el") esk-user-dir (concat user-emacs-directory user-login-name))
+(setq esk-system-config (concat user-emacs-directory system-name ".el") esk-user-config (concat user-emacs-directory user-login-name ".el") esk-user-dir (concat user-emacs-directory "personal"))
 
 (add-to-list 'load-path esk-user-dir)
 
